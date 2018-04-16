@@ -21,3 +21,4 @@ Known Problems
 - No pointers
 - No structs, no enums, no typedefs
 - Many other things may fail: if you experience a bug, please feel free to submit an issue or a pull request
+- Do not reuse variables in different scoped at the moment, its broken!

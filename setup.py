@@ -40,7 +40,7 @@ setup(
     version='1.0',
     author='Xeline Software Development Team',
     maintainer='Xeline Software Development Team',
-    author_email='no-emails@localhost',
+    author_email='junk@mailinator.com',
     url='https://github.com/xel-software/c-to-epl',
     download_url = 'https://github.com/xel-software/c-to-epl/archive/1.0.tar.gz',
     platforms='Cross Platform',
