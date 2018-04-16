@@ -37,7 +37,7 @@ setup(
         C to ePL Converter in Python
     """,
     license='BSD',
-    version='1.0',
+    version='1.1',
     author='Xeline Software Development Team',
     maintainer='Xeline Software Development Team',
     author_email='junk@mailinator.com',
