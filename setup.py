@@ -12,7 +12,7 @@ except ImportError:
 def _run_build_tables(dir):
     from subprocess import call
     call([sys.executable, '_build_tables.py'],
-         cwd=os.path.join(dir, 'pycparser'))
+         cwd=os.path.join(dir, 'ctoepl'))
 
 
 class install(_install):
@@ -31,20 +31,18 @@ class sdist(_sdist):
 
 setup(
     # metadata
-    name='pycparser',
-    description='C parser in Python',
+    name='c-to-epl',
+    description='C to ePL Converter in Python',
     long_description="""
-        pycparser is a complete parser of the C language, written in
-        pure Python using the PLY parsing library.
-        It parses C code into an AST and can serve as a front-end for
-        C compilers or analysis tools.
+        C to ePL Converter in Python
     """,
     license='BSD',
-    version='2.18',
-    author='Eli Bendersky',
-    maintainer='Eli Bendersky',
-    author_email='eliben@gmail.com',
-    url='https://github.com/eliben/pycparser',
+    version='1.0',
+    author='Xeline Software Development Team',
+    maintainer='Xeline Software Development Team',
+    author_email='no-emails@localhost',
+    url='https://github.com/xel-software/c-to-epl',
+    download_url = 'https://github.com/xel-software/c-to-epl/archive/1.0.tar.gz',
     platforms='Cross Platform',
     classifiers = [
         'Development Status :: 5 - Production/Stable',
@@ -58,7 +56,12 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    packages=['pycparser', 'pycparser.ply'],
-    package_data={'pycparser': ['*.cfg']},
+    packages=['ctoepl', 'ctoepl.ply'],
+    package_data={'ctoepl': ['*.cfg']},
+    entry_points={
+    'console_scripts': [
+        'c_to_epl=ctoepl:main',
+    ],
+},
     cmdclass={'install': install, 'sdist': sdist},
 )
