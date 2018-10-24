@@ -41,8 +41,8 @@ setup(
     author='Xeline Software Development Team',
     maintainer='Xeline Software Development Team',
     author_email='junk@mailinator.com',
-    url='https://github.com/xel-software/c-to-epl',
-    download_url = 'https://github.com/xel-software/c-to-epl/archive/1.2.tar.gz',
+    url='https://github.com/xel-software/xel-c-to-epl-compiler',
+    download_url = 'https://github.com/xel-software/xel-c-to-epl-compiler/archive/1.2.tar.gz',
     platforms='Cross Platform',
     classifiers = [
         'Development Status :: 5 - Production/Stable',
