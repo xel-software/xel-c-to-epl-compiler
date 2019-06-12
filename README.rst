@@ -1,24 +1,31 @@
 ======================
-C to ePL Compiler v1.0
+C 转 ePL 编译器 v1.0
 ======================
 
 
-Introduction
+简介
 ============
 
-What is the C to ePL Compiler
+什么是C转ePL编译器
 -----------------------------
+它是一个允许您将C算法转换为XEL网络可执行的ePL语言的代码转换器。由于ePL不允许使用函数返回值和函数参数，使用C转ePL编译器会将这些变的更容易一些。
 
-**c-to-epl** is a coder converter that will allow you to convert your C algorithms to the ePL language usable on the XEL network. Since ePL does not allow for the usage of function return values or function arguments, c-to-epl will make your life a lot easier.
 
-Known Problems
+已知问题
 --------------
 
-**c-to-epl** is still work-in-progress and may contain severe bugs. Furthermore, is does not yet support any of the following features:
+编译器当前仍处于持续更新状态，可能会包含一些bug. 
 
-- Does not allow the initialization for arrays
-- You are allowed to use only one function call either standalone or in a variable initialization. Using function calls in more complex statements will fail
-- No pointers
-- No structs, no enums, no typedefs
-- Many other things may fail: if you experience a bug, please feel free to submit an issue or a pull request
-- Do not reuse variables in different scoped at the moment, its broken!
+此外，它暂时还不支持以下功能：
+
+-不允许数组的初始化
+
+-您仅能在变量初始化或独立进行一个函数调用，复杂条件下进行函数调用将失败，不准确
+
+-不允许指针
+
+-不允许结构体，联合体，类型定义
+
+-其他一些未知操作会出现错误：如果您发现了一个bug，欢迎推送issue或者pull request
+
+-在同一时刻，不要重复使用不同作用域的变量，会不可控
